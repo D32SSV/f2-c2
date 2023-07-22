@@ -1,0 +1,89 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200&display=swap');
+
+* {
+    padding: 0px;
+    margin: 0px;
+    font-family: Poppins, sans-serif;
+}
+
+header {
+    background-color: #FFF;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    /* width: 90rem; */
+    height: 5rem;
+    flex-shrink: 0;
+}
+
+header div {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding: 1rem;
+}
+
+#menu {
+    font-family: Poppins;
+    font-size: 1rem;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+    margin-right: 1rem;
+}
+
+#menu>#home {
+    color: #509E2F;
+}
+
+#man {
+    width: 2.625rem;
+    height: 2.625rem;
+}
+
+.heroimage {
+    position: relative;
+    width: 100%;
+    height: 5%;
+    text-align: contain;
+    border-radius: 1.875rem;
+    background: url(src/hero.jpeg);
+    background-size: cover;
+    background-repeat: space;
+    padding: 5.5rem 5.5rem;
+    margin: 5.5rem 5.5rem; 
+}
+
+.heroimage::before {
+    content: '';
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    border-radius: 1.875rem;
+    padding: 5.5rem 5.5rem;
+    margin: 5.5rem 5.5rem; 
+    background: linear-gradient(90deg, #252525 0%, rgba(0, 0, 0, 0.00) 100%);
+
+}
+
+.herocontent {
+    position: relative;
+    width: 60%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    /* margin: 5.5rem; */
+    padding: 5.5rem 5.5rem 5.5rem 5.5rem;
+}
+
+.heroinner {
+    position: absolute;
+    top: 0;
+    left: 0;
+    padding: 20px;
+    color: #fff;
+    border-radius: 1.875rem;
+}
